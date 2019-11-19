@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>操作步骤</title>
+      <link href="/2019/11/19/%E6%93%8D%E4%BD%9C%E6%AD%A5%E9%AA%A4/"/>
+      <url>/2019/11/19/%E6%93%8D%E4%BD%9C%E6%AD%A5%E9%AA%A4/</url>
+      
+        <content type="html"><![CDATA[<hr><p>title: 操作步骤<br>date: 2019-11-19 16:20:13<br>tags:<br>实验步骤—<br>1.登陆进GitHub。<br>2.新建一个yinwenxiang.github.io的仓库。<br>3.找到需要的主题地址：<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank" rel="noopener">https://github.com/blinkfox/hexo-theme-matery</a>, 执行以下命令即可安装主题：git clone <a href="https://github.com/blinkfox/hexo-theme-matery。" target="_blank" rel="noopener">https://github.com/blinkfox/hexo-theme-matery。</a><br>4.代码高亮：由于 Hexo 自带的代码高亮主题显示不好看，所以主题中使用到了 hexo-prism-plugin 的 Hexo 插件来做代码高亮，安装命令如下：<br>npm i -S hexo-prism-plugin<br>然后，修改 Hexo 根目录下 _config.yml 文件中 highlight.enable 的值为 false，并新增 prism 插件相关的配置，主要配置如下：<br>highlight:<br>  enable: false<br>prism_plugin:<br>  mode: ‘preprocess’    # realtime/preprocess<br>  theme: ‘tomorrow’<br>  line_number: false    # default false<br>  custom_css:<br>搜索功能：<br>本主题中还使用到了 hexo-generator-search 的 Hexo 插件来做内容搜索，安装命令如下：<br>npm install hexo-generator-search –save<br>在 Hexo 根目录下的 _config.yml 文件中，新增以下的配置项：<br>search:<br>  path: search.xml<br>  field: post<br>文章字数统计：<br>如果你想要在文章中显示文章字数、阅读时长信息，可以安装 hexo-wordcount插件。<br>安装命令如下：<br>npm i –save hexo-wordcount<br>然后只需在本主题下的 _config.yml 文件中，激活以下配置项即可：<br>wordCount:<br>  enable: false # 将这个值设置为 true 即可.<br>  postWordCount: true<br>  min2read: true<br>  totalCount: true<br>5.不要忘记解析自己的域名。 记录类型选A或CNAME，A记录的记录值就是ip地址，github(官方文档)提供了两个IP地址，192.30.252.153和192.30.252.154，这两个IP地址为github的服务器地址，两个都要填上，解析记录设置两个www和@，线路就默认就行了，CNAME记录值填你的github博客网址。然后在_posts文件夹下新建一个文件CNAME，不需要任何后缀，里面写你的域名比如我的域名<a href="http://www.yinwenxiang.top" target="_blank" rel="noopener">www.yinwenxiang.top</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>test_my_site</title>
       <link href="/2019/11/03/test-my-site/"/>
       <url>/2019/11/03/test-my-site/</url>
